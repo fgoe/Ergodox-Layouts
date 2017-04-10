@@ -225,8 +225,8 @@ static layout_t layout PROGMEM = {
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
    grave,        1,        2,        3,        4,        5,      esc,
-     tab,      T_q,      T_w,      T_e,      T_r,      T_t,   lpu2l2,
-    caps,      T_a,      T_s,      T_d,      T_f,      T_g,
+    caps,      T_q,      T_w,      T_e,      T_r,      T_t,   lpu2l2,
+     tab,      T_a,      T_s,      T_d,      T_f,      T_g,
 shL2kcap,      T_z,      T_x,      T_c,      T_v,      T_b,    pipes,
  leftEck, rightEck,   arrowL,   arrowR, lpupo1l1,
                                                                  end,     home,
