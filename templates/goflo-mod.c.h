@@ -203,6 +203,14 @@ void keys__press__qmark(void) {
 }
 void R(qmark)(void) {}
 
+void keys__press__atsign(void) {
+ usb__kb__set_key(true, KEYBOARD__RightAlt);
+ usb__kb__set_key(true, KEYBOARD__q_Q);
+ usb__kb__send_report();
+ usb__kb__set_key(false, KEYBOARD__RightAlt);
+ usb__kb__set_key(false, KEYBOARD__q_Q);
+}
+void R(atsign)(void) {}
 
  
 // ----------------------------------------------------------------------------
@@ -244,17 +252,17 @@ shL2kcap,      T_z,      T_x,      T_c,      T_v,      T_b,    pipes,
   transp,       F1,       F2,       F3,       F4,       F5,      F11,
   transp,        1,        2,        3,        4,        5,   transp,
   transp,  sbrackL,  sbrackR,   curlyL,   curlyR,  bkslash,
-  transp,straightQuote, leftQuote,rightQuote,nop,      ins,   transp,
+  transp,straightQuote, leftQuote,rightQuote,home,   pageD,   transp,
   transp,   transp,   transp,   transp,   transp,
                                                               transp,   transp,
                                                     transp,   transp,   transp,
-                                                    transp,   transp,   transp,
+                                                    transp,      ins,   transp,
 // right hand ..... ......... ......... ......... ......... ......... .........
-               F12,       F6,       F7,       F8,       F9,      F10,     power,
+               F12,       F6,       F7,       F8,       F9,       F10,     power,
             transp,        6,        7,         8,        9,        0,  volumeU,
                       parenR,leftSlash,rightSlash,leftBrack,rightBrack, volumeD,
-            transp,    qmark,      nop,       nop,      nop,      nop,     mute,
-                                transp,    transp,   transp,   transp,   transp,
+            transp,    pageU,      end,    atsign,   transp,    transp,     mute,
+                                transp,    transp,   transp,    transp,   transp,
   transp,   transp,
   transp,   transp,   transp,
   transp,   transp,   transp  ),
